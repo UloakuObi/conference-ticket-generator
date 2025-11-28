@@ -11,6 +11,9 @@ yarn.debug.log*
 yarn.error.log*
 npm-debug.log*
 
+package.json
+package-lock.json
+
 # Environment and secrets
 .env
 .env.local

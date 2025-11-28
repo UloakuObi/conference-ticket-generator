@@ -1,0 +1,138 @@
+/* Custom Properties */
+:root {
+    /* Colors */
+    --clr-neutral-900: 248 70%10%;
+    --clr-neutral-700: 245 19% 35%;
+    --clr-neutral-500: 245 15% 58%;
+    --clr-neutral-300: 252 6% 83%;
+    --clr-neutral-0: 0 0% 100%;
+
+    --clr-orange-700: 7, 71%, 60%;
+    --clr-orange-500: 7, 88%, 67%;
+    --clr-gradient-01: linear-gradient(90deg, #F37362 0%, #FFF 100%);
+
+    /* Fonts */
+    --fs-preset-1: 3.75rem;
+    --fs-preset-2: 2.5rem;
+    --fs-preset-3: 1.875rem;
+    --fs-preset-4: 1.5rem;
+    --fs-preset-5: 1.25rem;
+    --fs-preset-6: 1.125rem;
+    --fs-preset-7: 0.75rem;
+
+    --fs-mobile-preset-1: 1.875rem;
+    --fs-mobile-preset-2: 1.5rem;
+    --fs-mobile-preset-3: 1.375rem;
+    --fs-mobile-preset-4: 1.25rem;
+    --fs-mobile-preset-5: 1.25rem;
+    --fs-mobile-preset-6: 0.875rem;
+    --fs-mobile-preset-7: 0.65rem;
+}
+
+/* General Resets */
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    color: hsl(var(--clr-neutral-300));
+    font-family: "Inconsolata", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+}
+
+main {
+    position: relative;
+    z-index: 10;
+}
+
+/* -------------------- */
+/* - BACKGROUNG IMAGES- */
+/* -------------------- */
+
+div.bg-images {
+    border: 1px solid red;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+.bg-image img {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-pattern-lines {
+    border: 2px solid forestgreen;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fills parent without stretching weirdly */
+    z-index: 2;
+}
+
+.bg-pattern-circle{
+    border: 3px solid white;
+    width: 218px;
+    height: 218px;
+
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    z-index: 3;
+}
+.bg-squiggly-bottom {
+    border: 1px solid yellow;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.bg-squiggly-top {
+    border: 1px solid blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+@media (max-width:769px) {
+    .bg-squiggly-top {
+        width: 230px;
+        height: 110px;
+        top: 5%;
+    }
+
+    .bg-squiggly-bottom img {
+        width: 396px;
+        height: 278px;
+    }
+}
+
+@media (max-width:481px) {
+    .bg-squiggly-top {
+        width: 112px;
+        height: 52px;
+        top: 2%;
+    }
+
+    .bg-squiggly-bottom img {
+        width: 301px;
+        height: 209px;
+    }
+}

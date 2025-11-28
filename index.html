@@ -4,54 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./index.css">
+  
   <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Form starts -->
+  <main>
+    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
 
-  Your Journey to Coding Conf 2025 Starts Here!
+    <h3>Secure your spot at next year's biggest coding conference.</h3>
 
-  Secure your spot at next year's biggest coding conference.
+    <p>
+      Upload Avatar
+      Drag and drop or click to upload
+      Upload your photo (JPG or PNG, max size: 500KB).
 
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
+      Full Name
 
-  Full Name
+      Email Address
+      example@email.com
 
-  Email Address
-  example@email.com
+      GitHub Username
+      @yourusername
 
-  GitHub Username
-  @yourusername
+      Generate My Ticket
+    </p>
 
-  Generate My Ticket
+    <!-- Form ends -->
 
-  <!-- Form ends -->
+    <!-- Generated tickets starts -->
 
-  <!-- Generated tickets starts -->
+    <h3>Congrats,! Your ticket is ready.</h3>
 
-  Congrats, <!-- Full Name -->! Your ticket is ready.
+    <p>
+      We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
 
-  We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-  Coding Conf
-  Jan 31, 2025 / Austin, TX
+      Coding Conf
+      Jan 31, 2025 / Austin, TX
+    </p>
+  </main>
 
   <!-- Generated tickets ends -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="bg-images">
+    <img class="bg-pattern-lines" src="./assets/images/pattern-lines.svg" alt="background line pattern"/>
+
+    <picture class="bg-image">
+      <source media="(max-width: 480px)" srcset="./assets/images/background-mobile.png">
+      <source media="(max-width: 768px)" srcset="./assets/images/background-tablet.png">
+      <img src="./assets/images/background-desktop.png" alt="">
+    </picture>
+    
+    <img class="bg-pattern-circle" src="./assets/images/pattern-lines.svg" alt="decorative circular pattern on the background"/>
+    
+    <picture class="bg-squiggly-bottom">
+      <source media="(max-width: 768px)" srcset="assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg">
+      <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="">
+    </picture>
+    
+    <img class="bg-squiggly-top" src="./assets/images/pattern-squiggly-line-top.svg" alt="decorative squiggly pattern on the background"/>
   </div>
 </body>
 </html>
